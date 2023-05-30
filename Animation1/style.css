@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    margin: 10px auto;
+    background-color: aquamarine;
+    
+}
+.child{
+    height: 400px;
+    width: 80px;
+    border-radius: 50px;
+    
+}
+.afficheBlock{
+    flex-basis: 700px;  
+}
+.child1{
+    background-image: url('./image/digitalisation.jpg');  
+   
+}
+.child2{
+    background-color: orange;
+   
+}
+.child3{
+    background-color: gray;
+}
+.child4{
+    background-color: rgb(153, 96, 96);
+}
+.child5{
+    background-color: rgb(55, 170, 108);
+}

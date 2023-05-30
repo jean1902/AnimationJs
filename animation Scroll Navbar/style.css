@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.navbar{
+    background-color: rgb(20, 20, 35);
+    color: white;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 2000;
+}
+
+.navbar.active {
+   transition: all 0.3s ease-in-out;
+    background-color: rgb(174, 145, 145);
+    color: black;
+    position: fixed;
+}
+.container_link li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.container_link li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.containerBox{
+    background-color: rgb(170, 46, 46);
+    height: 27px;
+    width: 43px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bar{
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+}
+.leftSideBar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    background-color: black;
+    height: 100vh;
+    z-index: 1000;
+}
+.leftSideBar.active{
+    transition: width 0.7s ease-in-out;
+    width: 200px;
+}
+.navbar_link {
+    position: relative;
+}
+.listExterieur{
+    position: absolute;
+    top: 60px;
+    height: 100px;
+    width: 100px;
+    background-color: #141423;
+    padding: 5px;
+    display: none;
+}
+.listExterieur.display{
+    display: block;
+}
+.sms{
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    padding: 6px;
+    background-color: rgb(104, 23, 14);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+   position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+/* .barOne{
+    transform: rotate(224deg)
+}
+.barTwo{
+    transform: rotate(224deg)
+}
+.barThree{
+    transform: rotate(224deg)
+} */
